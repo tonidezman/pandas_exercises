@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  jupyter:
+    build: .
+    volumes:
+      - pandas_exercises:/app
+    ports:
+      - "8888:8888"
+
+volumes:
+  pandas_exercises:
